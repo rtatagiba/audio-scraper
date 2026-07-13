@@ -1,0 +1,5 @@
+# Cola aqui os links (um por linha) de Instagram, TikTok ou YouTube/Shorts.
+# Linhas sem URL sao ignoradas. Exemplo:
+# https://www.instagram.com/reel/XXXXXXXX/
+# https://www.tiktok.com/@utilizador/video/1234567890
+# https://www.youtube.com/shorts/XXXXXXXX
