@@ -1,0 +1,181 @@
+{
+  "ficheiro": "DaoO4EKhiim.mp3",
+  "idioma_detetado": "pt",
+  "duracao": 89.79,
+  "metadados": {
+    "id": "DaoO4EKhiim",
+    "title": "Video by designfromhuman",
+    "description": "Criei um app pra economizar tempo e dinheiro no supermercado usando design comportamental e inteligência artificial.\n\nNeste vídeo, eu mostro como supermercados são projetados pra te fazer andar mais, ver mais coisas e comprar por impulso. Quanto mais você circula sem um plano, mais o ambiente decide por você.\n\nEntão eu usei a Runable pra criar uma ferramenta simples. Você fala o que precisa comprar e ela organiza tudo por seções reais do mercado, já na ordem ideal. Isso reduz a carga mental e corta as distrações no caminho.\n\nQuando você sabe exatamente o que fazer, você compra menos por impulso e sai mais rápido.\n\nNo fim, não é sobre força de vontade. É sobre reduzir a influência do ambiente.\n\n#RunableAI #designcomportamental",
+    "uploader": "Rian Dutra | Design From Human",
+    "uploader_id": "13239294253",
+    "channel": "designfromhuman",
+    "webpage_url": "https://www.instagram.com/p/DaoO4EKhiim/",
+    "extractor": "Instagram",
+    "duration": 89.76599884033203,
+    "upload_date": "20260710",
+    "like_count": 2671,
+    "comment_count": 151
+  },
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.06,
+      "text": "Toda vez que eu vou no supermercado com a minha mulher, a gente demora o dobro de tempo e gasta mais do que devia."
+    },
+    {
+      "start": 5.1,
+      "end": 12.1,
+      "text": "Por isso eu usei princípios de design comportamental e eu criei uma ferramenta que nos ajudou a economizar tempo e dinheiro nas compras de mercado."
+    },
+    {
+      "start": 12.22,
+      "end": 14.84,
+      "text": "Da última vez ela comprou esse negócio e eu nem sei pra que serve isso."
+    },
+    {
+      "start": 14.86,
+      "end": 17.92,
+      "text": "O que acontece é o seguinte, no supermercado eles são desenhados pra o quê?"
+    },
+    {
+      "start": 17.96,
+      "end": 19.3,
+      "text": "Pra aumentar o seu percurso."
+    },
+    {
+      "start": 19.34,
+      "end": 25.66,
+      "text": "Os produtos essenciais ficam lá longe, agora as promoções aparecem no caminho e cada sessão tenta te gerar um novo desejo."
+    },
+    {
+      "start": 25.66,
+      "end": 30.42,
+      "text": "E quanto mais você circula sem uma rota, procurando docinho novo, mais a sua atenção é capturada."
+    },
+    {
+      "start": 30.48,
+      "end": 33.26,
+      "text": "E mais o que acontece? Você compra por impulso, olha só."
+    },
+    {
+      "start": 33.32,
+      "end": 34.1,
+      "text": "Hot Wheels, Gisele."
+    },
+    {
+      "start": 34.14,
+      "end": 40.8,
+      "text": "Então, depois de eu desenhar as telas, eu abri a Runnable e descrevi exatamente todo o funcionamento da ferramenta"
+    },
+    {
+      "start": 40.8,
+      "end": 42.84,
+      "text": "que eu idealizei pra ele construir pra mim."
+    },
+    {
+      "start": 42.9,
+      "end": 47.2,
+      "text": "Funciona assim. Primeiro, você informa a ordem das sessões do supermercado que frequenta."
+    },
+    {
+      "start": 47.24,
+      "end": 49.1,
+      "text": "Aí depois você fala que precisa comprar."
+    },
+    {
+      "start": 49.2,
+      "end": 53.2,
+      "text": "Então a ferramenta que eu fiz pela Runnable pega esse texto desorganizado"
+    },
+    {
+      "start": 53.2,
+      "end": 55.18,
+      "text": "E transforma numa lista categorizada"
+    },
+    {
+      "start": 55.18,
+      "end": 57.4,
+      "text": "E já ordenada pelas exceções reais do mercado"
+    },
+    {
+      "start": 57.4,
+      "end": 58.7,
+      "text": "E aí te guia durante a compra"
+    },
+    {
+      "start": 58.7,
+      "end": 61.32,
+      "text": "Ó, vou precisar de café pra semana, adoçante"
+    },
+    {
+      "start": 61.32,
+      "end": 63.34,
+      "text": "E três caixas de bombom"
+    },
+    {
+      "start": 63.34,
+      "end": 64.76,
+      "text": "Não, peraí, coloca mais uma caixa que eu não falto"
+    },
+    {
+      "start": 64.76,
+      "end": 67.78,
+      "text": "Quando você faz uma tarefa já sabendo exatamente o que vai fazer"
+    },
+    {
+      "start": 67.78,
+      "end": 68.62,
+      "text": "E por onde seguir"
+    },
+    {
+      "start": 68.62,
+      "end": 70.72,
+      "text": "Tende a eliminar influências externas"
+    },
+    {
+      "start": 70.72,
+      "end": 72.56,
+      "text": "Porque reduz a carga cognitiva"
+    },
+    {
+      "start": 72.56,
+      "end": 75.52,
+      "text": "E o tempo de exposição aos estímulos do supermercado"
+    },
+    {
+      "start": 75.52,
+      "end": 77.6,
+      "text": "Você não fica decidindo a cada corredor"
+    },
+    {
+      "start": 77.6,
+      "end": 79.52,
+      "text": "E não dá tanto espaço pro ambiente"
+    },
+    {
+      "start": 79.52,
+      "end": 80.66,
+      "text": "Decidir por você"
+    },
+    {
+      "start": 80.66,
+      "end": 82.0,
+      "text": "E isso funciona pra caramba"
+    },
+    {
+      "start": 82.0,
+      "end": 85.34,
+      "text": "A não ser que esqueça o celular no carro, como a gente sempre tá fazendo agora."
+    },
+    {
+      "start": 85.4,
+      "end": 87.38,
+      "text": "Me deixa, gente. Adoro passear no supermercado."
+    },
+    {
+      "start": 87.42,
+      "end": 89.76,
+      "text": "Mas se você quiser usar a ferramenta, eu deixei no link da BIM."
+    }
+  ]
+}

@@ -52,6 +52,24 @@ def limpar_texto(segmentos: list[dict]) -> str:
     return " ".join(partes)
 
 
+def transcrever(model: WhisperModel, audio: Path, language: str, vad: bool):
+    segments, info = model.transcribe(
+        str(audio),
+        language=language,
+        beam_size=5,
+        vad_filter=vad,
+        # menos agressivo que o default, para nao cortar fala sobre musica de fundo
+        vad_parameters={"min_silence_duration_ms": 500, "speech_pad_ms": 400},
+        # evita loops de repeticao do large-v3 que saltam trechos inteiros
+        condition_on_previous_text=False,
+    )
+    segmentos = [
+        {"start": round(s.start, 2), "end": round(s.end, 2), "text": s.text.strip()}
+        for s in segments
+    ]
+    return segmentos, info
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Transcreve audios com faster-whisper.")
     parser.add_argument("--model", default="small",
@@ -90,15 +108,15 @@ def main() -> int:
     for i, audio in enumerate(pendentes, 1):
         print(f"[{i}/{len(pendentes)}] {audio.name}")
         try:
-            segments, info = model.transcribe(
-                str(audio),
-                language=args.language,
-                vad_filter=True,
-            )
-            segmentos = [
-                {"start": round(s.start, 2), "end": round(s.end, 2), "text": s.text.strip()}
-                for s in segments
-            ]
+            segmentos, info = transcrever(model, audio, args.language, vad=True)
+
+            # se a transcricao nao cobre o audio todo, tenta de novo sem VAD
+            cobertura = segmentos[-1]["end"] / info.duration if segmentos and info.duration else 0.0
+            if cobertura < 0.8:
+                print(f"  cobertura baixa ({cobertura:.0%}), a repetir sem VAD...")
+                seg2, info2 = transcrever(model, audio, args.language, vad=False)
+                if seg2 and (not segmentos or seg2[-1]["end"] > segmentos[-1]["end"]):
+                    segmentos, info = seg2, info2
 
             texto = limpar_texto(segmentos)
             (pasta_saida / f"{audio.stem}.txt").write_text(texto, encoding="utf-8")
@@ -113,7 +131,9 @@ def main() -> int:
             with open(pasta_saida / f"{audio.stem}.json", "w", encoding="utf-8") as f:
                 json.dump(resultado, f, ensure_ascii=False, indent=2)
 
-            print(f"  ok ({len(segmentos)} segmentos, {len(texto)} chars)")
+            fim = segmentos[-1]["end"] if segmentos else 0.0
+            print(f"  ok ({len(segmentos)} segmentos, {len(texto)} chars, "
+                  f"cobre {fim:.1f}s de {info.duration:.1f}s)")
             ok += 1
         except Exception as e:
             print(f"  ERRO em {audio.name}: {e}")

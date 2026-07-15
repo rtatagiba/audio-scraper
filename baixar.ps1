@@ -75,6 +75,7 @@ $ytArgs = @(
     "--restrict-filenames",
     "--ignore-errors",
     "--sleep-interval", "5",
+    "--max-sleep-interval", "30",
     "-o", "audios/%(id)s.%(ext)s",
     "--write-info-json"
 )
