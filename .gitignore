@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Segredos / sessao
+cookies.txt
+
+# Dados baixados / gerados (nao versionar midia de terceiros)
+audios/
+transcricoes/
+links.csv
+_urls_temp.txt
+baixados.txt
